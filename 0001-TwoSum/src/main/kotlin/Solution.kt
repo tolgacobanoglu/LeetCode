@@ -30,6 +30,11 @@ fun twoSum(numbers: IntArray, target: Int): IntArray {
     {
         for (j in 1..numbers.size-1)
         {
+            if(i==j)
+            {
+                continue;
+            }
+            
             if (numbers[i] + numbers[j] == target)
             {
                 return intArrayOf(i , j)
