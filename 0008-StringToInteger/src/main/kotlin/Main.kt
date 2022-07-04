@@ -26,7 +26,6 @@ fun myAtoi(text: String): Int {
     }
 
     var value = valueAsString.toInt()
-
     if (isNegative) //if negative convert it to negative
     {
         value *= -1
